@@ -1,11 +1,35 @@
 import requests
 from pprint import pprint
 
+'''
+## 03. 특정 조건에 맞는 인기 영화 조회
+
+> 인기 영화 목록을 평점이 높은 순으로 5개의 정렬하여 영화 데이터 목록 출력
+
+-   requests 라이브러리를 활용하여 TMDB에서 현재 인기 있는 영화 목록(Get Populations) 데이터를 요청합니다.
+-   응답 받은 데이터 중 평점(`vote_average`)이 높은 영화 5개의 정보를 리스트로 반환하는 함수를 작성합니다.
+'''
+from dotenv import dotenv_values
+api_key = dotenv_values(".env").get('API_KEY')
 
 def ranking():
     pass
     # 여기에 코드를 작성합니다.
-
+    url = str(f'https://api.themoviedb.org/3/movie/popular?api_key={api_key}')
+    res = requests.get(url=url).json()
+    # print(res.keys())
+    # ['page', 'results', 'total_pages', 'total_results']
+    total_pages = 1 # res.get('toal_pages')
+    movie_list = []
+    for page in range(1, total_pages+1):
+      url = str(f'https://api.themoviedb.org/3/movie/popular?api_key={api_key}&page={page}')
+      results = requests.get(url=url).json().get('results')
+      for movie in results:
+        movie_list.append(movie)
+        movie_list = sorted(movie_list, key=lambda movie: movie['vote_average'], reverse=True)[:5]
+    # for movie in movie_list:
+    #   print(movie['title'], movie['vote_average'])
+    return movie_list
 
 # 아래의 코드는 수정하지 않습니다.
 if __name__ == '__main__':
