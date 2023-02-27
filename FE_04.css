@@ -1,0 +1,90 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html { 
+  box-sizing: border-box;
+  font-size: 15pt;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  width: 1000px;
+}
+.container{
+  position: relative;
+  width: 100%;
+  height: auto;
+  border: solid black 1px;
+  padding: 0;
+}
+.container02{
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+.container03 {
+  position: relative;
+  width: 300px;
+  height: auto;
+  padding: 0;
+}
+.box{
+  margin: 5%;
+  /* background-color: lightblue; */
+  text-align: left;
+}
+.img{
+  width: 100%;
+  margin-bottom: 5px;
+}
+.fixed{
+  position: absolute;
+  width: 30%;
+  top: 0;
+  right: 0;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 { 
+  font-size: 1.5rem;
+}
+p {
+  line-height: 200%;
+  word-spacing: 0.3rem;
+  letter-spacing: 0.1rem
+}
+.button { 
+  text-align: center;
+  background-color: black;
+  color: white;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  font-size: 0.7rem;
+  border-radius: 20%;
+  position: fixed;
+  left: 1100px;
+  bottom: 100px;
+  text-decoration: none;
+}
+.item{
+  width: 100%;
+}
+.flag{
+  position:absolute;
+  left: 15px;
+  top: 0px;
+  width: 10%;
+}
+.promo{
+  position:absolute;
+  right: 0;
+  top: 0;
+  width: 25%;
+}
