@@ -1,18 +1,15 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 
-html {
-  border: none;
-  background-color: transparent;
-  width: auto;
-}
 * {
   font-size: 12pt;
   margin: 20px;
+  background-color: white;
 }
 body {
   width: 1080px;
   height: auto;
-  background: yellow;
+  background-color: lightgray;
+  padding: 10px;
 }
 body *{
   background-color: peachpuff;
@@ -44,11 +41,11 @@ main{
 main.flex_container {
   display: flex;
   flex-flow: column;
-  flex-grow: 1;
+  justify-content: space-evenly;
   min-height: 80px;
 }
 article {
-  margin: 80px;
+  margin: 60px;
   background-color: lightskyblue;
   display: flex;
   flex-flow: column;
