@@ -64,7 +64,7 @@ content {
   width: 200px;
   height: 260px;
   background-color: black;
-  margin: 1.5rem;
+  margin: 3rem;
 }
 
 .content_box_image {
@@ -77,8 +77,6 @@ content {
   margin-top: -55%;
   margin-left: -40%;
 }
-
-
 
 .content_box_text{
   position: absolute;
