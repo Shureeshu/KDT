@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="web_test_02_02.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body class="flex vr">
+  <div class="flex hr">
+    <div id="sidebar" class="flex vr">
+      <div class="logo_box">
+        <img class="logo_img" src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png"
+          href="https://open.spotify.com/" alt="스포티파이로고">
+      </div>
+      <div class="flex vr menu_box">
+        <div class="flex hr menu_item">
+          <span class="material-symbols-outlined">
+            home
+          </span>
+          <p class="menu_text">Home</p>
+        </div>
+        <div class="flex hr menu_item">
+          <span class="material-symbols-outlined">
+            search
+          </span>
+          <p class="menu_text">Search</p>
+        </div>
+        <div class="flex hr menu_item">
+          <span class="material-symbols-outlined">
+            library_music
+          </span>
+          <p class="menu_text">Your Library</p>
+        </div>
+      </div>
+      <div class="flex vr menu_box">
+        <div class="flex hr playlist">
+          <span class="material-symbols-outlined">
+            favorite
+          </span>
+          <p>favorites</p>
+        </div>
+        <div class="flex hr playlist">
+          <span class="material-symbols-outlined">
+            add_box
+          </span>
+          <p>add playlist</p>
+        </div>
+      </div>
+      <div class="flex vr foot_box">
+        <div class="cookies">
+          쿠키세팅
+        </div>
+        <div class="lan_button flex hr">
+          <span class="material-symbols-outlined">
+            language
+          </span>
+          <p>English</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <nav>
+        <div class="nav_box">
+          <div class="button row">
+            <a href="">&lt;</a>
+          </div>
+          <div class="button row">
+            <a href="">&gt;</a>
+          </div>
+        </div>
+        <div class="nav_box">
+          <div class="button row">
+            <a href="https://www.spotify.com/kr-ko/signup?forward_url=https%3A%2F%2Fopen.spotify.com%2F">가입하기</a>
+          </div>
+          <div class="button row">
+            <a href="https://accounts.spotify.com/ko/login?continue=https%3A%2F%2Fopen.spotify.com%2F">로그인하기</a>
+          </div>
+        </div>
+      </nav>
+
+      <hr>
+
+      <content>
+        <div class="content_box row">
+          <img
+            src="https://t2.genius.com/unsafe/327x327/https%3A%2F%2Fimages.genius.com%2F0cc17757cbe6c7934352f1d2ce021a34.1000x1000x1.jpg"
+            alt="" class="content_box_image">
+          <div class="content_box_text">
+            <p class="singer">뉴진스</p>
+            <p class="title">Hype boy</p>
+          </div>
+        </div>
+        <div class="content_box row">
+          <img
+            src="https://image.bugsm.co.kr/album/images/500/40824/4082425.jpg"
+            alt="" class="content_box_image">
+          <div class="content_box_text">
+            <p class="singer">뉴진스</p>
+            <p class="title">Ditto</p>
+          </div>
+        </div>
+        <div class="content_box row">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Sir_Tim_Berners-Lee.jpg/1280px-Sir_Tim_Berners-Lee.jpg"
+            alt="" class="content_box_image">
+          <div class="content_box_text">
+            <p class="singer">팀-버너스리</p>
+            <p class="title">웹의 아버지</p>
+          </div>
+        </div>
+        <div class="content_box row">
+          <img
+            src="https://spnimage.edaily.co.kr/images/Photo/files/NP/S/2022/04/PS22040800049.jpg"
+            alt="" class="content_box_image">
+          <div class="content_box_text">
+            <p class="singer">카즈하</p>
+            <p class="title">Anti fragile</p>
+          </div>
+        </div>
+        <div class="content_box row">
+          <img
+            src="https://entertainimg.kbsmedia.co.kr/cms/uploads/PERSON_20220405075028_3b9104d6de492e3833dd9e4c60b60c7a.jpg"
+            alt="" class="content_box_image">
+          <div class="content_box_text">
+            <p class="singer">사쿠라</p>
+            <p class="title">Anti fragile</p>
+          </div>
+        </div>
+        <div class="content_box row">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="" class="content_box_image">
+          <div class="content_box_text">
+            <p class="singer">채원</p>
+            <p class="title">Anti fragile</p>
+          </div>
+        </div>
+      </content>
+    </div>
+  </div>
+  </div>
+  </div>
+  <footer class="flex hr">
+    <div class="footer_text flex vr">
+      <p>Developed by : 도용주</p>
+      <p>Co-developed by : 이수정</p>
+    </div>
+    <div class="footer_button">
+      <p>Get Premium</p>
+    </div>
+  </footer>
+</body>
+
+</html>
