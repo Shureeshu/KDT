@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="./bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+  <hr>
+  <div class="container p-3">
+    <h1>5. Modal 활용 반응형 앨범 페이지</h1>
+  </div>
+  <hr>
+  <div class="container p-3">
+    <div class="row row-cols-lg-2 row-cols-1 g-3">
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <picture>
+              <source srcset="./image/04.avif" type="image/svg+xml">
+              <img src="./image/04.avif" class="img-fluid img-thumbnail" alt="...">
+            </picture>
+            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#Modal04">자세히
+              보기</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="row row-cols-lg-2 row-cols-4 g-3">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <picture>
+                  <source srcset="./image/05.avif" type="image/svg+xml">
+                  <img src="./image/05.avif" class="img-fluid img-thumbnail" alt="...">
+                </picture>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                  data-bs-target="#Modal05">자세히 보기</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <picture>
+                  <source srcset="./image/06.avif" type="image/svg+xml">
+                  <img src="./image/06.avif" class="img-fluid img-thumbnail" alt="...">
+                </picture>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                  data-bs-target="#Modal06">자세히 보기</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <picture>
+                  <source srcset="./image/07.avif" type="image/svg+xml">
+                  <img src="./image/07.avif" class="img-fluid img-thumbnail" alt="...">
+                </picture>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                  data-bs-target="#Modal07">자세히 보기</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <picture>
+                  <source srcset="./image/08.avif" type="image/svg+xml">
+                  <img src="./image/08.avif" class="img-fluid img-thumbnail" alt="...">
+                </picture>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                  data-bs-target="#Modal08">자세히 보기</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <picture>
+              <source srcset="./image/09.avif" type="image/svg+xml">
+              <img src="./image/09.avif" class="img-fluid img-thumbnail" alt="...">
+            </picture>
+            <button type="button" class="btn btn-outline-primary">자세히 보기</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="row row-cols-lg-2 row-cols-4 g-3">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <picture>
+                  <img src="./image/01.jpg" class="img-fluid" alt="웹버지1">
+                </picture>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                  data-bs-target="#Modal01">자세히 보기</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <picture>
+                  <img src="./image/02.jpeg" class="img-fluid" alt="웹버지1">
+                </picture>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                  data-bs-target="#Modal02">자세히 보기</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <picture>
+                  <img src="./image/03.jpg" class="img-fluid" alt="웹버지1">
+                </picture>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                  data-bs-target="#Modal03">자세히 보기</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <picture>
+                  <img src="./image/pepe_01.jpg" class="img-fluid" alt="웹버지1">
+                </picture>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                  data-bs-target="#Modalpepe">자세히 보기</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="Modal04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <picture>
+            <source srcset="./image/04.avif" type="image/svg+xml">
+            <img src="./image/04.avif" class="img-fluid img-thumbnail" alt="...">
+          </picture>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Modal05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <picture>
+            <source srcset="./image/05.avif" type="image/svg+xml">
+            <img src="./image/05.avif" class="img-fluid img-thumbnail" alt="...">
+          </picture>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Modal06" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <picture>
+            <source srcset="./image/06.avif" type="image/svg+xml">
+            <img src="./image/06.avif" class="img-fluid img-thumbnail" alt="...">
+          </picture>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Modal07" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <picture>
+            <source srcset="./image/07.avif" type="image/svg+xml">
+            <img src="./image/07.avif" class="img-fluid img-thumbnail" alt="...">
+          </picture>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Modal08" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <picture>
+            <source srcset="./image/08.avif" type="image/svg+xml">
+            <img src="./image/08.avif" class="img-fluid img-thumbnail" alt="...">
+          </picture>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Modal09" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <picture>
+            <source srcset="./image/09.avif" type="image/svg+xml">
+            <img src="./image/09.avif" class="img-fluid img-thumbnail" alt="...">
+          </picture>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Modal01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <picture>
+            <img src="./image/01.jpg" class="img-fluid img-thumbnail" alt="...">
+          </picture>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Modal02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <picture>
+            <img src="./image/02.jpeg" class="img-fluid img-thumbnail" alt="...">
+          </picture>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Modal03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <picture>
+            <img src="./image/03.jpg" class="img-fluid img-thumbnail" alt="...">
+          </picture>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Modalpepe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <picture>
+            <img src="./image/pepe_01.jpg" class="img-fluid img-thumbnail" alt="...">
+          </picture>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

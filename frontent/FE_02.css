@@ -1,0 +1,52 @@
+/* FE_02.css */
+html {
+  font-size: 13px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.outer_box {
+  width: 50rem;
+  margin: 3rem;
+  border: 0.3rem solid black;
+  padding: 1rem;;
+}
+.profile_box {
+  background: yellowgreen;
+  padding: 1rem;
+}
+.image_box {
+  overflow: hidden;
+  place-items: cover;
+}
+.image_box img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.name {
+  font-weight: 800;
+  color: black;
+  font-size: 2.5rem;
+}
+.profession {
+  font-weight: 600;
+  font-style: italic;
+  color: gray;
+  font-size: 1.5rem;
+  border-bottom: 0.2rem dashed black;
+  margin: 0;
+}
+.description_box {
+  font-weight: 600;
+  place-items: center;
+  padding: 3rem;
+  display: grid;
+}
+.description_box p{
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  border-bottom: 0.2rem solid black;
+  place-self: center start;
+}
+.bold_red{
+  color: orangered;
+}

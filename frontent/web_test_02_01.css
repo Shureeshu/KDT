@@ -1,0 +1,174 @@
+* {
+  font-size: 12pt;
+  margin: 0;
+}
+body {
+  padding: 20px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20pt;
+}
+
+content {
+  display: flex;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.line-height p {
+  line-height: 100px;
+}
+
+nav .box *{
+  text-align: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.img {
+  margin: 5pt;
+}
+
+h1 *{
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.line-height a {
+  text-decoration-line: none;
+  color: blue;
+}
+
+.margin_left{
+  margin-left: 30pt;
+  margin-right: 10pt;
+}
+
+.sidebar {
+  width: 25%;
+}
+.sidebar ul li{
+  list-style-type: none;
+  margin: 10pt;
+}
+
+.sidebar a {
+  text-decoration-line: none;
+  color: blue;
+}
+
+.list_heading {
+  padding-bottom: 15pt;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 { 
+  font-size: 1.7rem;
+  margin-top: 2rem;
+}
+
+footer {
+  display: flex;
+  flex-flow: column;
+}
+
+footer *{
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.main li{
+  margin-top: 0.5rem;
+}
+
+.small_text {
+  font-size: 0.7rem;
+}
+
+.main p{
+  margin-top: 1rem;
+}
+.float_box{
+  float: right;
+  width: 400px;
+  flex: flex;
+  flex-flow: column;
+  background-color: lightblue;
+  border: solid gray 1px;
+  margin: 10px;
+
+}
+
+.category {
+  width: 30%;
+  padding: 0;
+}
+
+.float_box_row {
+  display: flex;
+  align-content: center;
+}
+
+p.center {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.category p{
+  font-weight: bold;
+  text-align: left;
+  padding: 0;
+  margin-left: 15px;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.description {
+  text-align: left;
+}
+
+.description p{
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.float_box img{
+  width: 360px;
+  margin: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#a {
+  height: auto;
+  overflow: hidden;
+}
+
+.float_card {
+  background-color: lightgray;
+  text-align: center;
+  margin: 15px;
+}
+
+.float_card p {
+  margin-top: 0;
+}

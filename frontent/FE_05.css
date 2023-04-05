@@ -1,0 +1,79 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+* {
+  font-size: 12pt;
+  margin: 20px;
+  background-color: white;
+}
+body {
+  width: 1080px;
+  height: auto;
+  background-color: lightgray;
+  padding: 10px;
+}
+body *{
+  background-color: peachpuff;
+}
+nav {
+  min-height: 80px;
+  height: auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+nav div{
+  display: flex;
+  flex-flow: row;
+  background-color: lightskyblue;
+}
+nav div p{
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  text-justify: center;
+  width: 100px;
+  background-color: lightskyblue;
+  border: solid peachpuff 1px;
+}
+main{
+  padding: 20px 0;
+}
+main.flex_container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  min-height: 80px;
+}
+article {
+  margin: 60px;
+  background-color: lightskyblue;
+  display: flex;
+  flex-flow: column;
+}
+article *{
+  background-color: lightskyblue;
+  margin: 1rem;
+}
+article.etc {
+  display: flex;
+  flex-flow: row;
+  min-height: 80px;
+  flex-wrap: wrap;
+  background-color: lightskyblue;
+  justify-content: space-evenly;
+  align-content: center;
+}
+footer {
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+article p {
+  text-indent: 0.5rem;
+  text-transform: capitalize;
+}
+article h2 {
+  text-transform: capitalize;
+}
